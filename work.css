@@ -1,0 +1,196 @@
+.Navigation{
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:#1565C0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+ 
+/* ── Navigation ── */
+.Navigation {
+  width: 100%;
+  background: #1565C0;
+  padding: 0.4rem 2rem;
+}
+ 
+.Navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+ 
+.Navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  transition: opacity 0.15s;
+}
+ 
+.Navigation ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+ 
+/* ── Page Header ── */
+.page-header {
+  text-align: center;
+  padding: 3.5rem 1rem 1rem;
+}
+ 
+.page-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #1565C0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+ 
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #1a2340;
+}
+ 
+/* ── Timeline Container ── */
+.timeline {
+  position: relative;
+  max-width: 720px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+ 
+/* The vertical line running down the center-left */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 2.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #1565C0, #a8c4f0);
+}
+ 
+/* ── Each Timeline Item ── */
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 0.6s ease both;
+}
+ 
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.25s; }
+.timeline-item:nth-child(3) { animation-delay: 0.4s; }
+.timeline-item:nth-child(4) { animation-delay: 0.55s; }
+ 
+/* ── Dot on the line ── */
+.timeline-dot {
+  position: absolute;
+  left: 1.85rem;
+  top: 1.1rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1565C0;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #1565C0;
+  flex-shrink: 0;
+  z-index: 1;
+}
+ 
+/* ── Date label ── */
+.timeline-date {
+  min-width: 110px;
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1565C0;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+ 
+/* ── Card ── */
+.timeline-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e0e8f5;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.07);
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.timeline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(21, 101, 192, 0.13);
+}
+ 
+.timeline-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: #1a2340;
+  margin-bottom: 2px;
+}
+ 
+.timeline-card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.65rem;
+}
+ 
+.timeline-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+}
+ 
+/* ── Animation ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
