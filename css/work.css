@@ -194,3 +194,30 @@ body {
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .Navigation ul {
+    gap: 0.75rem;
+  }
+
+  .timeline::before {
+    left: 1.25rem;
+  }
+
+  .timeline-dot {
+    left: 0.35rem;
+  }
+
+  .timeline-date {
+    padding-left: 2rem;
+    font-size: 11px;
+    min-width: 80px;
+  }
+
+  .timeline-card h2 {
+    font-size: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+}

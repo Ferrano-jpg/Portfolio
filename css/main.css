@@ -52,3 +52,31 @@ ul li a:hover {
   margin: 1.5rem auto 0.75rem;
   border: 3px solid #1565C0;
 }
+@media (max-width: 768px) {
+  .Navigation ul {
+    gap: 1rem;
+  }
+
+  .Hero {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .Mezelfe h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-photo {
+    margin-top: 2rem;
+  }
+
+  .photo-placeholder {
+    width: 220px;
+    height: 280px;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+}
